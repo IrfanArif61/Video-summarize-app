@@ -45,12 +45,14 @@ export function Navbar() {
           >
             Start Project
           </Link>
-          <Button
-            variant="default"
-            className="bg-[#0B2447] hover:bg-[#0B2447]/90"
-          >
-            Login
-          </Button>
+          <Link to="/login">
+            <Button
+              variant="default"
+              className="bg-[#0B2447] hover:bg-[#0B2447]/90"
+            >
+              Login
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -71,12 +73,14 @@ export function Navbar() {
           >
             Start Project
           </Link>
-          <Button
-            variant="default"
-            className="w-full bg-[#0B2447] hover:bg-[#0B2447]/90"
-          >
-            Login
-          </Button>
+          <Link to="/login" className="w-full">
+            <Button
+              variant="default"
+              className="w-full bg-[#0B2447] hover:bg-[#0B2447]/90"
+            >
+              Login
+            </Button>
+          </Link>
         </div>
       )}
     </nav>
